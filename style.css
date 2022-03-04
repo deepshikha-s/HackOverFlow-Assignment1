@@ -1,0 +1,43 @@
+#questiondisplay {
+    height: 150pt;
+}
+
+#colourdisplay{
+    background-color: black;
+    height: 270pt;
+}
+
+#taskbar{
+    background-color: coral;
+    height: 25pt;
+}
+
+#NewColor{
+    background-color: white;
+    height: 25pt;
+    position: fixed;
+    left: 150pt;
+}
+
+#Easy{
+    background-color: white;
+    height: 25pt;
+    position: fixed;
+    right: 200pt;
+}
+
+#Hard{
+    background-color: white;
+    height: 25pt;
+    position: fixed;
+    right: 150pt;
+}
+
+
+.heading{
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
