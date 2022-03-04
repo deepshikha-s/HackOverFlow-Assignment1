@@ -15,22 +15,22 @@
 #NewColor{
     background-color: white;
     height: 25pt;
-    position: fixed;
+    position: relative;
     left: 150pt;
 }
 
 #Easy{
     background-color: white;
     height: 25pt;
-    position: fixed;
-    right: 200pt;
+    position: relative;
+    left: 300pt;
 }
 
 #Hard{
     background-color: white;
     height: 25pt;
-    position: fixed;
-    right: 150pt;
+    position: relative;
+    left: 450pt;
 }
 
 
@@ -40,4 +40,40 @@
 
 .text{
     text-align: center;
+}
+
+#Color1{
+    height: 100pt;
+    width: 100pt;
+    background-color: black;
+}
+
+#Color2{
+    height: 100pt;
+    width: 100pt;
+    background-color: black;
+}
+
+#Color3{
+    height: 100pt;
+    width: 100pt;
+    background-color: black;
+}
+
+#Color4{
+    height: 100pt;
+    width: 100pt;
+    background-color: black;
+}
+
+#Color5{
+    height: 100pt;
+    width: 100pt;
+    background-color: black;
+}
+
+#Color6{
+    height: 100pt;
+    width: 100pt;
+    background-color: black;
 }
