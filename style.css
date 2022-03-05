@@ -1,5 +1,11 @@
-#questiondisplay {
-    height: 150pt;
+#header {
+    height: 65pt;
+    background-color: aqua;
+}
+
+#questiondisplay{
+    height: 60pt;
+    background-color: aquamarine;
 }
 
 #colourdisplay{
@@ -7,12 +13,18 @@
     height: 270pt;
 }
 
+#message{
+    background-color: bisque;
+    height: 25pt;
+    font-size: 20pt;
+}
+
 #taskbar{
     background-color: coral;
     height: 25pt;
 }
 
-#NewColor{
+#Start{
     background-color: white;
     height: 25pt;
     position: relative;

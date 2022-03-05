@@ -6,16 +6,15 @@
         <script src="functionality.js"></script>
     </head>
     <body>
-        <div id = "questiondisplay">
+        <div id = "header">
             <h1 class = "heading">The Great Color Game</h1>
-            <p class = "text">
-                <h2>RGB Values:</h2>
-            </p>
         </div>
+        <div id = "questiondisplay"></div>
+        <div id="message">Click start to play!</div>
         <div id = "taskbar">
-            <button id="NewColor" onclick="start()">New Color</button>
-            <button id="Easy">Easy</button>
-            <button id="Hard">Hard</button>
+            <button id="Start" onclick="start()">Start</button>
+            <button id="Easy" onclick="easy()">Easy</button>
+            <button id="Hard" onclick="hard()">Hard</button>
         </div>
         <div id = "colourdisplay">
             <button id="Color1" class="Colors"></button>
