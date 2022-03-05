@@ -1,7 +1,8 @@
 var colorans = [];
 var colorseasy = [];
 var colorshard = [];
-
+var anseasy = 0;
+var anshard = 0;
 function start() {
     document.getElementById("message").innerHTML = "Choose a mode to play"
 }
@@ -25,9 +26,8 @@ function easy(){
     document.getElementById("Color4").style.backgroundColor = black;
     document.getElementById("Color5").style.backgroundColor = black;
     document.getElementById("Color6").style.backgroundColor = black;
-    const ans = Math.floor(Math.random()*3);
-    colorans = colorseasy[ans];
-    check();
+    anseasy = Math.floor(Math.random()*3);
+    
 }
 
 function hard(){
@@ -51,13 +51,18 @@ function hard(){
     document.getElementById("Color4").style.backgroundColor = color4;
     document.getElementById("Color5").style.backgroundColor = color5;
     document.getElementById("Color6").style.backgroundColor = color6;
-    const ans = Math.floor(Math.random()*6);
-    colorans = colorshard[ans];
-    check();
+    anshard = Math.floor(Math.random()*6);
 }
-
 function check(){
-
+    document.getElementById("questiondisplay").innerHTML = "RGB Values:   ";
 }
 
-//return "rgb(" + r +", " + g + ", " + b +")";
+function checkeasy(){
+    colorans = colorseasy[anseasy];
+    document.getElementById("questiondisplay").innerHTML = "RGB Values:   " + colorans;
+}
+
+function checkhard(){
+    colorans = colorshard[anshard];
+    document.getElementById("questiondisplay").innerHTML = "RGB Values:   " + colorans;
+}
