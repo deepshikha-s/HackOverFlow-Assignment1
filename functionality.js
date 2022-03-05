@@ -7,10 +7,20 @@ var anshard = 0;
 
 function start() {
     const yellow = 'rgb(255, 255, 51)'
+    const black = 'rgb(0,0,0)';
     document.getElementById("message").innerHTML = "Choose a mode to play"
     document.getElementById("header").style.backgroundColor = yellow;
     document.getElementById("questiondisplay").style.backgroundColor = yellow;
     document.getElementById("message").style.backgroundColor = yellow;
+    document.getElementById("Color4").style.backgroundColor = black;
+    document.getElementById("Color5").style.backgroundColor = black;
+    document.getElementById("Color6").style.backgroundColor = black;
+    document.getElementById("Color7").style.backgroundColor = black;
+    document.getElementById("Color8").style.backgroundColor = black;
+    document.getElementById("Color9").style.backgroundColor = black;
+    document.getElementById("Color1").style.backgroundColor = black;
+    document.getElementById("Color2").style.backgroundColor = black;
+    document.getElementById("Color3").style.backgroundColor = black;
 }
 
 function easy(){
@@ -25,7 +35,7 @@ function easy(){
     var color1 = colorseasy[0]
     var color2 = colorseasy[1]
     var color3 = colorseasy[2]
-    var black = 'rgb(0,0,0)';
+    const black = 'rgb(0,0,0)';
     document.getElementById("Color1").style.backgroundColor = color1;
     document.getElementById("Color2").style.backgroundColor = color2;
     document.getElementById("Color3").style.backgroundColor = color3;
