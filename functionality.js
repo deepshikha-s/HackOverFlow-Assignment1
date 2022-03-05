@@ -6,7 +6,11 @@ var anseasy = 0;
 var anshard = 0;
 
 function start() {
+    const yellow = 'rgb(255, 255, 51)'
     document.getElementById("message").innerHTML = "Choose a mode to play"
+    document.getElementById("header").style.backgroundColor = yellow;
+    document.getElementById("questiondisplay").style.backgroundColor = yellow;
+    document.getElementById("message").style.backgroundColor = yellow;
 }
 
 function easy(){
@@ -37,7 +41,7 @@ function easy(){
 }
 
 function hard(){
-    var black = 'rgb(0,0,0)';
+    const black = 'rgb(0,0,0)';
     document.getElementById("message").innerHTML = "Click on the color which has the same rgb values as mentioned."
     for (let i = 0; i<6; i++){
         const r = Math.floor(Math.random()*256);
@@ -71,10 +75,10 @@ function checkeasy(bid){
     var style = getComputedStyle(button);
     var buttoncolor = style['background-color'];
     if (buttoncolor == coloranseasy){
-        colormatches()
+        colormatcheseasy()
     }
     else{
-        colordoesntmatch()
+        colordoesntmatch(bid)
     }
 }
 
@@ -83,17 +87,38 @@ function checkhard(bid){
     var style = getComputedStyle(button);
     var buttoncolor = style['background-color'];
     if (buttoncolor == coloranshard){
-        colormatches()
+        colormatcheshard()
     }
     else{
-        colordoesntmatch()
+        colordoesntmatch(bid)
     }
 }
 
-function colormatches(){
+function colormatcheseasy(){
     document.getElementById("message").innerHTML = "You Guessed it Right!! CONGRATULATIONS!!"
+    document.getElementById("Color1").style.backgroundColor = coloranseasy;
+    document.getElementById("Color2").style.backgroundColor = coloranseasy;
+    document.getElementById("Color3").style.backgroundColor = coloranseasy;
+    document.getElementById("header").style.backgroundColor = coloranseasy;
+    document.getElementById("questiondisplay").style.backgroundColor = coloranseasy;
+    document.getElementById("message").style.backgroundColor = coloranseasy;
 }
 
-function colordoesntmatch(){
+function colormatcheshard(){
+    document.getElementById("message").innerHTML = "You Guessed it Right!! CONGRATULATIONS!!"
+    document.getElementById("Color4").style.backgroundColor = coloranshard;
+    document.getElementById("Color5").style.backgroundColor = coloranshard;
+    document.getElementById("Color6").style.backgroundColor = coloranshard;
+    document.getElementById("Color7").style.backgroundColor = coloranshard;
+    document.getElementById("Color8").style.backgroundColor = coloranshard;
+    document.getElementById("Color9").style.backgroundColor = coloranshard;
+    document.getElementById("header").style.backgroundColor = coloranshard;
+    document.getElementById("questiondisplay").style.backgroundColor = coloranshard;
+    document.getElementById("message").style.backgroundColor = coloranshard;
+}
+
+function colordoesntmatch(btid){
+    const black = 'rgb(0,0,0)';
     document.getElementById("message").innerHTML = "Try Again!"
+    document.getElementById(btid).style.backgroundColor = black;
 }
